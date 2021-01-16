@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0118)https://linksharing.samsungcloud.com/contents/view?contentsToken=1610697534152COPbuIk&currentIndex=1&linkUrlVersion=V0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Link Sharing</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="noindex,nofollow,noimageindex">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+<meta property="og:title" content="Link Sharing">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://linksharing.samsungcloud.com/resources/images/mobile_og.png">
+<meta property="og:description" content="1 file (526.6 MB)">
+<link rel="shortcut icon" type="image/x-icon" href="https://linksharing.samsungcloud.com/resources/images/share_link_32.png">
+<link rel="stylesheet" href="./mental awareness program_files/layout.css">
+<script type="text/javascript" src="./mental awareness program_files/jquery-2.2.0.min.js.download"></script>
+<script type="text/javascript" src="./mental awareness program_files/jquery.numeric.min.js.download"></script>
+<script type="text/javascript" src="./mental awareness program_files/moment.min.js.download"></script>
+<script type="text/javascript" src="./mental awareness program_files/handlebars.min-latest.js.download"></script>
+<script type="text/javascript" src="./mental awareness program_files/handlebars.helper.js.download"></script>
+<script type="text/javascript" src="./mental awareness program_files/remoteshare.prototype.js.download"></script>
+<script type="text/javascript" src="./mental awareness program_files/remoteshare.js.download"></script>
+<script type="text/javascript" src="./mental awareness program_files/sharelink.js.download"></script><link rel="stylesheet" href="./mental awareness program_files/fotorama.css">
+<script type="text/javascript"> 
+//<!--
+//<![CDATA[
+
+$(document).ready(function() {
+    var options = {};
+    options.contextPath     = '';
+    options.contentsToken   = '1610697534152COPbuIk';
+    options.selectMode      = 'false';
+    options.linkUrlVersion  = 'V0'
+    options.currentIndex    = '0';
+    options.mailReceiver    = 'social.voc@samsung.com';
+    options.mailSubject     = 'Report as inappropriate';
+    options.mailMessage     = 'This content will be reported as a violation of intellectual property rights.';
+    ShareLink.list.functions.init(options);
+
+  localStorage.setItem('clearSelectedIds', 'false');
+
+    /* attach event binding */
+    $('.fotorama').on('fotorama:show', function (e, fotorama, extra) {
+        $('#pageInfo').text(fotorama.activeIndex + 1 + '/' + fotorama.size);
+        if (fotorama.activeFrame.title === 'broken') {
+            $('#downloadSingleBtn').hide();
+        } else {
+            $('#downloadSingleBtn').show();
+            $('.img360').closest('div').siblings('div').addClass('fotorama__view_360_photo');
+        }
+    });
+    
+    
+    $('.fotorama').on('fotorama:error', function (e, fotorama, extra) {
+        fotorama.splice(extra.index, 1, {img: "/resources/images/default/myfiles_thumb_broken.png", title: 'broken'});
+    });
+    
+    $('.fotorama').on('fotorama:loadvideo', function (e, fotorama, extra) {
+        $('#pageInfo').hide();
+    });
+    
+    $('.fotorama').on('fotorama:unloadvideo', function (e, fotorama, extra) {
+        $('#pageInfo').show();
+    });
+    
+    $('.fotorama').fotorama({
+        width: '100%',
+        height: '100%',
+        glimpse: 0,
+        loop: true,
+        hash: false,
+        arrows: false,
+        allowfullscreen: false,
+        nav: false,
+        click: false,
+        swipe: true,
+        startindex: ShareLink.globals.currentIndex,
+    }); 
+});
+
+$(document).on('click', '.down_area1', function(e) {
+    ShareLink.list.functions.downloadSingleContent();
+    e.preventDefault();
+    e.stopPropagation();
+});
+
+$(document).on('click', '.btn_file_down', function(e) {
+    ShareLink.list.functions.downloadSingleContent();
+    e.preventDefault();
+    e.stopPropagation();
+});
+
+$(document).on('click', '.btn_back', function(e) {
+    window.history.back();
+    e.preventDefault();
+    e.stopPropagation();
+});
+
+$(document).on('click', '.btn_report', function(e) {
+    e.preventDefault();
+    $('.bg_pop').show();
+    $('body').css('overflow', 'hidden').on('touchmove', function(e) {
+         e.preventDefault();
+    });
+}).on('click', '.btn_confirm', function(e) {
+    e.preventDefault();
+    $(".bg_pop").hide();
+    var originalContentUrl = $('.fotorama').data('fotorama').activeFrame.full || '';
+    RemoteShare.functions.openMailWindow(originalContentUrl, ShareLink.mail.receiver, ShareLink.mail.subject, ShareLink.mail.message);
+}).on('click', '.btn_close, .btn_cancel', function(e) {
+    e.preventDefault();
+    $(".bg_pop").hide();
+    $('body').css('overflow', 'auto').off('touchmove');
+});
+
+
+//]]&gt;
+//-->
+</script>
+<style type="text/css"></style></head>
+<body>
+<!-- wrap -->
+  <div id="wrap" class="bg_foto">
+    <div id="pageInfo" class="set_num">1/1</div>
+    
+    <style></style><div class="fotorama--hidden"></div><div id="fotorama" class="fotorama fotorama1610699595932"><div class="fotorama__wrap fotorama__wrap--css3 fotorama__wrap--slide fotorama__wrap--toggle-arrows" style="width: 100%; min-width: 0px; max-width: 100%;"><div class="fotorama__stage" style="width: 1920px; height: 912px;"><div class="fotorama__stage__shaft" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); width: 1920px; margin-left: 0px;"><div class="fotorama__stage__frame fotorama__stage__frame--video fotorama__active fotorama__loaded fotorama__loaded--img" style="left: 0px;"><img src="./mental awareness program_files/M11aomYm2kEvppZo3GeKZgPVEtPI4qoL748MGxQNYvCHBHXrq_760" class="fotorama__img" style="width: 513.042px; height: 912px; left: 703.479px; top: 0px;"><div class="fotorama__html">
+                    <div class="down_info">
+                      <div class="btn_back">
+                        <a href="https://linksharing.samsungcloud.com/contents/view?contentsToken=1610697534152COPbuIk&amp;currentIndex=1&amp;linkUrlVersion=V0#/" title="Back">Back</a>
+                      </div>
+                      <ul>
+                        <li>20201011_155615.mp4</li>
+                        <li>526.6 MB</li>
+                      </ul>
+                      <a href="https://linksharing.samsungcloud.com/contents/view?contentsToken=1610697534152COPbuIk&amp;currentIndex=1&amp;linkUrlVersion=V0#/" class="btn_report" title="Report">Report</a>
+                    </div>
+                    <div class="down_area1">
+                      <a href="https://linksharing.samsungcloud.com/contents/view?contentsToken=1610697534152COPbuIk&amp;currentIndex=1&amp;linkUrlVersion=V0#/" title="Download" class="btn_down">Download</a>
+                    </div>
+                    
+                  </div><div class="fotorama__video-play"></div></div></div><div class="fotorama__arr fotorama__arr--prev fotorama__arr--disabled" tabindex="-1" role="button" disabled="disabled" style="display: none;"></div><div class="fotorama__arr fotorama__arr--next fotorama__arr--disabled" tabindex="-1" role="button" disabled="disabled" style="display: none;"></div><div class="fotorama__video-close"></div></div></div></div>
+  </div>
+  <!-- //wrap -->
+  <!-- layer pop-->
+  <div class="bg_pop">
+    <div class="layer_pop">
+      <button class="btn_close">common.tts.close</button>
+        <p class="txt_service">Report this content for violating intellectual property rights?</p>
+        <p class="pop_btns">
+          <a href="https://linksharing.samsungcloud.com/contents/view?contentsToken=1610697534152COPbuIk&amp;currentIndex=1&amp;linkUrlVersion=V0#/" class="btn_cancel">Cancel</a>
+          <a href="https://linksharing.samsungcloud.com/contents/view?contentsToken=1610697534152COPbuIk&amp;currentIndex=1&amp;linkUrlVersion=V0#/" class="btn_confirm">Report</a>
+        </p>
+    </div>
+  </div>
+  <!-- //layer pop-->
+  
+ <script type="text/javascript" src="./mental awareness program_files/fotorama.js.download"></script>
+     
+</body></html>

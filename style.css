@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-size: 30px;
+}
+
+#welcome {
+    background-color: aquamarine;
+    height: 800px;
+}
+
+.links {
+    color: red;
+    position: fixed;
+    font-size: 20px !important;
+}
+
+.links:hover {
+    text-decoration: underline;
+    font-size: 25px !important;
+}
+
+p {
+    font-size: 30px;
+}
+
+#contact {
+    background-color: aqua;
+}
